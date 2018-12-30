@@ -1,0 +1,125 @@
+@import url("https://use.typekit.net/vou3yqs.css");
+
+body {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+nav {
+    height: 100px;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    /*padding: 10px;*/
+}
+
+nav .row {
+    padding-top: 40px;
+}
+
+#main-logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-left: 5vw;
+}
+
+#sub-logo {
+    display: inline-block;
+    min-width: 300px;
+    font-size: 1.1rem;
+    padding-left: 5vw;
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.menu-item {
+    padding-left: 40px;
+}
+
+.line {
+    transition: 0.4s;
+    display: block;
+    height: 1px;
+    width: 35px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+  transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+#menu-large {
+    margin-top: 20px;
+    float: right;
+    display: none;
+    margin-right: 5vw;
+}
+
+#menu-hamburger {
+    float: right;
+    margin-right: 5vw;
+   /* height: 70px;
+    width: 70px;*/
+}
+
+#menu-small {
+    z-index: 1000;
+    display: none;
+    top: 20vh;
+    width: 100vw;
+   /* background-color: black;*/
+    height: 0px;
+}
+.menu-item-small {
+    display: none;
+    opacity: 0;
+    font-size: 2rem;
+    margin: 30px;
+    text-align: center;
+}
+
+#content-wrapper {
+    position: absolute;
+    top: 20vh;
+    width: 100vw;
+}
+
+@media (min-width: 992px) { 
+    #menu-large {
+        display: inline-block;
+    }
+    #menu-hamburger {
+        display: none;
+    }
+    #main-logo {
+    font-size: 2rem;
+    }
+}
+
+#logo-home {
+    left: 0;
+    top: 30px;
+    position: absolute;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+}

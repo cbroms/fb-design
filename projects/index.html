@@ -1,0 +1,36 @@
+---
+layout: default
+title: Projects - FB Design
+---
+<script src="/static/js/project-home-main.js"></script>
+<script>
+    var posts = [
+        {% for project in site.projects %}
+            {
+                "title": "{{ project.title }}",
+                "tags": [
+                        {% for tag in project.tags %}
+                            "{{ tag }}",
+                        {% unless forloop.last %}{% endunless %}
+                        {% endfor %}
+                    ]
+            }
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+    console.log(posts);
+</script>
+
+<div class="projects">
+    {% for project in site.projects %}
+        <div class="project-tile"  
+             id="{{ project.url }}">
+            <img class="main-image" src="{{ project.image }}">
+             <!--<div class="title">
+                 <h1>{{ project.title }}</h1>
+                 <h2>{{ project.description }}</h2>-->
+             </div>
+        </div>
+{% endfor %}
+</div>
+

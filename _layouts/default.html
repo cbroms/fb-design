@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <title>{{ page.title }}</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/jquery.easing.js"></script>
+</head>
+<body>
+    <nav>
+        <script src="/static/js/nav-main.js"></script>
+        <link rel="stylesheet" href="/static/css/nav-style.css">
+        <div class="containter-fluid">
+        <div class="row">
+            <div class="col-8">
+                <a href="/">
+                    <span id="main-logo">Fairchild Broms Design</span>
+                    <span id="sub-logo">Architecture & Interiors</span>
+                </a>
+            </div>
+            <div class="col-4">
+                <div id="menu-large">
+                    <a href="/about">
+                        <span class="menu-item">About</span>
+                    </a>
+                    <a href="/projects">
+                       <span class="menu-item">Projects</span>
+                   </a>
+                   <a href="/contact">
+                    <span class="menu-item">Contact</span>
+                    </a>
+            </div>
+            <div id="menu-hamburger" onclick="transformMenuIcon(this)">
+                <span class="line bar1"></span>
+                <span class="line bar2"></span>
+                <span class="line bar3"></span>
+            </div>
+     </div>
+     </div>
+     <div id="menu-small">
+                <a href="/about">
+                    <span class="menu-item-small">About</span>
+                </a>
+                <a href="/projects">
+                   <span class="menu-item-small">Projects</span>
+               </a>
+               <a href="/contact">
+                    <span class="menu-item-small">Contact</span>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+    <div id="content-wrapper">
+        {{ content }}
+    </div>
+    
+</body>
+</html>
