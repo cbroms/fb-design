@@ -3,3 +3,25 @@ layout: default
 title: FB Design
 ---
 <script src="/static/js/home-main.js"></script>
+<div id="project-carousel">
+{% for project in site.projects %}
+
+    {% if project.show_on_landing == true %}
+        
+        <div class="project-slide"  
+             id="{{ project.url }}">
+            <img class="image-slide" src="{{ project.image }}">
+             <!--<div class="title">{% if forloop.index0 == 0 %} current {% endif %}
+                 <h1>{{ project.title }}</h1>
+                 <h2>{{ project.description }}</h2>-->
+             </div>
+        </div>
+    {% endif %}
+{% endfor %}
+</div>
+
+<style type="text/css">
+    body {
+        background-color: #202020;
+    }
+</style>

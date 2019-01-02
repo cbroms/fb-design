@@ -1,6 +1,6 @@
 body {
-    background-color: #202020;
-    color: #DFDFDF;
+    background-color: #FCFCFC;
+    color: #202020;
 }
 
 ::selection {
@@ -13,12 +13,14 @@ body {
 }
 
 .project-tile {
+    cursor: pointer;
     padding-bottom: 40px;
     padding-top: 40px;
 }
 .projects {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-top: 20vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
 }
 
 .main-image {
@@ -31,49 +33,29 @@ body {
     transform: translateX(-50%);
 }
 
+.form-control {
+    margin-left: 10px;
+    width: 175px;
+    display: inline-block;
+    border: none;
+    background-color: #FCFCFC;
+}
+
+.column {
+    padding: 0;
+}
+
 h1 {
-  
-    
+    font-size: 2rem;
+    padding-bottom: 20px;
 }
-
-h2 {
-
-}
-
-
-/*
-.title {
-    max-width: 68vw;
-    position: absolute;
-    margin-top: 15vh;
-    left: 17vw;
-    padding: 20px;
-    background-color: #2B2B2B;
-}
-
-.centered-head {
-    opacity: 0;
-    position: absolute;
-    top: 0vh;
-    left: 15vw;
-}
-
-.head-title {
-    font-size: 4rem;
-    font-family: ibm-plex-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-bottom: 30px;
-}*/
 
 @media (min-width: 768px) { 
     .main-image {
         height: 40vw;
         width: 40vw;
     }
-
 }
-
 
 @media (min-width: 992px) { 
     .main-image {
@@ -84,4 +66,20 @@ h2 {
 
 ::-webkit-scrollbar {
  display: none;
+}
+
+.image-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0vw;
+    display: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.current {
+    right: 0;
+    display: block;
 }

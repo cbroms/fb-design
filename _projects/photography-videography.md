@@ -1,14 +1,16 @@
 ---
 layout: project-page
 title: Photography & Videography
-time: Short films and black and white digital and film photography.
+subtitle: Short films and black and white digital and film photography.
 image: /static/img/photo_cover.jpg
-filename: photography-videography
+image_style: vertical
+show_on_landing: true
+tags: [something else]
 
 ---
-![Main Image](/static/img/photo_cover.jpg){: .hero-image }
+<!-- ![Main Image](/static/img/photo_cover.jpg){: .hero-image }
 # Photography & Videography
-## Short films and black and white digital and film photography.
+## Short films and black and white digital and film photography. -->
 
 ### Landscapes, urban and natural.
 

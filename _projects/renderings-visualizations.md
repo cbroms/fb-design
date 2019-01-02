@@ -4,6 +4,8 @@ title: Renderings, Visualizations, Architectural Photography
 time: Architectural and environmental visualizations, renderings, and photography, made with Revit, Unreal Engine, and Photoshop. 
 image: /static/img/rendering_cover.jpg
 filename: renderings-visualizations
+show_on_landing: true
+tags: [that]
 
 ---
 ![Main Image](/static/img/rendering_cover.jpg){: .hero-image .img-fluid }

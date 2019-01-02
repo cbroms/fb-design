@@ -8,6 +8,7 @@ title: Projects - FB Design
         {% for project in site.projects %}
             {
                 "title": "{{ project.title }}",
+                "id": "{{ project.url }}",
                 "tags": [
                         {% for tag in project.tags %}
                             "{{ tag }}",
@@ -20,8 +21,14 @@ title: Projects - FB Design
     ];
     console.log(posts);
 </script>
-
 <div class="projects">
+    <h1>Projects</h1>
+    <div class="form-group form-group-inline">
+        <label for="tag-selection">Type: </label>
+        <select class="form-control" id="tag-selection">
+             <option value="All">All</option>
+        </select>
+  </div>
     {% for project in site.projects %}
         <div class="project-tile"  
              id="{{ project.url }}">
@@ -32,5 +39,18 @@ title: Projects - FB Design
              </div>
         </div>
 {% endfor %}
+<style type="text/css">
+    nav a {
+        color: #202020;
+    }
+    nav a:hover {
+        color: #202020;
+        text-decoration: none;
+    }
+    .line {
+        background-color: #202020;
+    }
+    nav {background-color: #FCFCFC; }
+</style>
 </div>
 

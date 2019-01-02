@@ -5,14 +5,9 @@ $(document).ready(function(){
     // the images from the paragraph wrapping
     const parents = $('p > img').parent();
     parents.each(function() {
-       this.outerHTML = this.innerHTML
+     this.outerHTML = this.innerHTML
     });
     // consolidate elements from jekyll into various divs for styling
-    $('.content').append($("<div class='body-text'></div>"))
-    $('.content').prepend($("<div class='title'></div>"))
-    $('.title').append($('.content').children().filter('h1, h2'))
-    $('.title').append('<div class="arrow">&darr;</div>')
-    $('.body-text').append($('.content').children().not('.hero-image, .title'))
     // add a dummy element to the body to make wrapping easier later
     $('.body-text').prepend('<div></div>')
     $('.body-text').children().addClass('body-content')
@@ -39,7 +34,7 @@ $(document).ready(function(){
     // set up the grid system for the contents of the body
     $('.body-text').children().each(function(index){
         if (index == 0) { $('.body-text').append("<div class='row'></div>") }
-        let elt = $(this).detach()
+            let elt = $(this).detach()
         if ($(elt).is('img')){
             elt = $(elt).addClass('img-fluid')
         }
@@ -50,9 +45,11 @@ $(document).ready(function(){
             }
             $('.row').last().append("<div class='col-sm-12 col-lg-6 align-self-center' id='" + index.toString() + "'></div>")
             $('#' + index.toString()).append(elt)
-            if ( $('#' + index.toString()).siblings().length == 0) {
-                $('#' + index.toString()).children().first().css({ float: 'right'})
-            } else { $('#' + index.toString()).children().first().css({ float: 'left'}) }
+            if ($(elt).is('img')){
+                if ( $('#' + index.toString()).siblings().length == 0) {
+                    $('#' + index.toString()).children().first().css({ float: 'right'})
+                } else { $('#' + index.toString()).children().first().css({ float: 'left'}) }
+            }
         } else {
             $('.body-text').append("<div class='row text-center'></div>")
             $('.row').last().append("<div class='col-sm-12 col-lg-12 align-self-center' id='" + index.toString() + "'></div>")
@@ -60,24 +57,6 @@ $(document).ready(function(){
             $('.body-text').append("<div class='row'></div>")
         }        
     })
-
-    //  animate in image on page load
-    $('.hero-image').animate({
-        width: '55vw'
-    }, 1500);
-    // animate in title
-    $('.title').animate({
-        top: '30vh',
-        opacity: 1
-    }, 1500)
-
-    // initialize scrollreveal
-    ScrollReveal({
-        distance: '40%', 
-        duration: 1500,
-        delay: 600,
-        interval: 800
-    }).reveal('.body-content');
 
     // when images are loaded, adjust the size of the project panel
     $(document).imagesLoaded(function(){  resizeAdjust() });
@@ -91,3 +70,17 @@ function resizeAdjust() {
     let currentHBody = parseInt($('.body-text').css('height'))
     $('.container-main').css({height: (currentHCont + currentHBody).toString() + 'px'})
 }
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > window.innerHeight) {
+        $('body').css({backgroundColor: '#FCFCFC'})
+        $('nav').css({backgroundColor: '#FCFCFC'})
+        $('.line').css({backgroundColor: '#202020'})
+        $('nav a').css({color: '#202020'});
+    } else {
+        $('body').css({backgroundColor: '#202020'})
+        $('nav').css({backgroundColor: 'transparent'})
+        $('.line').css({backgroundColor: '#FCFCFC'})
+        $('nav a ').css({color: '#FCFCFC'});
+    }
+});
