@@ -67,3 +67,8 @@ function hideNav() {
 function revealNav() {
     $('nav').animate({top: '0'}, {duration: 1000, queue: false})
 }
+
+// fade out loading screen when loading complete
+Pace.on('done', function(){
+    $('#loading-screen').fadeOut(1500);
+})

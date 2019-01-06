@@ -1,19 +1,7 @@
 $(document).ready(function(){
     // set default easing function for all animations
     jQuery.easing.def = "easeOutCubic";
-
-    // // animate in 
-    // $('.centered-head').animate({
-    //     opacity: 1,
-    //     top: '15vh'
-    // }, 1500)
-    // $('.project-tile').animate({
-    //     opacity: 1
-    // }, 500)
-    // $('.dots').animate({
-    //     opacity: 1
-    // }, 1500)
-
+    
     // create a unique set of tags for filtering the projects
     let tags = new Set()
     for (let i = 0; i < posts.length; i++) {

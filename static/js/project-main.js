@@ -38,8 +38,7 @@ $(document).ready(function(){
         if ($(elt).is('img')){
             elt = $(elt).addClass('img-fluid')
         }
-        let rand = Math.random()
-        if ((!$(elt).hasClass('big') && !$($(elt).children().first()).is('iframe')) && (rand < 0.8 || !$(elt).is('img') || $(elt).hasClass('small'))){
+        if (!$(elt).hasClass('big') && !$($(elt).children().first()).is('iframe')){
             if ($('.row').last().children().length > 1){
                 $('.body-text').append("<div class='row'></div>")
             }

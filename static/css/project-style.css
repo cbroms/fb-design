@@ -81,6 +81,11 @@ ul {
     border-radius: 5px;
 }
 
+.content-wrapper {
+    max-width: 650px;
+    float: right;
+}
+
 .hero-image {
     object-fit: cover;
     object-position: 50% 50%;
