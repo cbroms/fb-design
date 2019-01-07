@@ -76,6 +76,7 @@ nav .row {
 
 
 #menu-large {
+    font-size: 1.3rem;
     margin-top: 20px;
     float: right;
     display: none;
@@ -121,6 +122,9 @@ nav .row {
     #main-logo {
     font-size: 2rem;
     }
+    #sub-logo {
+        padding-left: 35px;
+    }   
 }
 
 #logo-home {

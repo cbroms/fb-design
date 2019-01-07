@@ -73,12 +73,12 @@ function resizeAdjust() {
 $(window).scroll(function() {
     if ($(window).scrollTop() > window.innerHeight) {
         $('body').css({backgroundColor: '#FCFCFC'})
-        $('nav').css({backgroundColor: '#FCFCFC'})
+        $('nav').css({backgroundColor: '#FCFCFC', textShadow: 'none' })
         $('.line').css({backgroundColor: '#202020'})
         $('nav a').css({color: '#202020'});
     } else {
         $('body').css({backgroundColor: '#202020'})
-        $('nav').css({backgroundColor: 'transparent'})
+        $('nav').css({backgroundColor: 'transparent', textShadow: '0px 1px 30px rgba(0,0,0,0.4)'})
         $('.line').css({backgroundColor: '#FCFCFC'})
         $('nav a ').css({color: '#FCFCFC'});
     }

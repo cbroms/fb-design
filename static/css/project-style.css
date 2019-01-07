@@ -17,15 +17,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-::selection {
-  background: #F0CF00; 
-  color: #FAF9F8;
-}
-::-moz-selection {
-  background: #F0CF00; 
-  color: #FAF9F8;
-}
-
 .arrow {
     margin-top: 30px;
     font-size: 2rem;
@@ -48,11 +39,13 @@ h2 {
 .title.horizontal {
     left: 5vw;
     bottom: 15vh;
+    text-shadow: 0px 1px 30px rgba(0,0,0,0.4);
 }
 
 .title.vertical {
     left: 5vw;
     bottom: 15vh;
+    text-shadow: 0px 1px 30px rgba(0,0,0,0.4);
 }
 
 .title-background {
@@ -61,7 +54,7 @@ h2 {
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: gray;
+    background-color: rgb(93, 103, 122);
 }
 
 /*.row {
@@ -124,6 +117,7 @@ ul {
 
 @media (min-width: 992px) { 
     .title.vertical {
+        text-shadow: none;
         left: 60vw;
         bottom: 40vh;
     }
@@ -139,9 +133,6 @@ ul {
     padding-right: 0px;
     padding-bottom: 5vh;
     height: 115vh;
-    -webkit-box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
-    box-shadow: -1px 33px 83px -10px rgba(0,0,0,0.75);
 }
 
 ::-webkit-scrollbar { 
@@ -184,3 +175,9 @@ iframe {
     min-width: 320px;
     min-height: 200px;
 }
+
+a, a:hover {
+   color: #F0912D;
+}
+
+nav { text-shadow: 0px 1px 30px rgba(0,0,0,0.4); }

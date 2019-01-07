@@ -66,7 +66,7 @@ $(document).ready(function(){
     $('.projects').append("<div class='containter-fluid'></div>")
     // put panels in rows and cols 
     $('.project-tile').each(function(index){
-        if (index % 3 == 0) {
+        if (index == 0) {
             $('.containter-fluid').append("<div class='row'></div>")
         }
         let elt = $(this).detach()
