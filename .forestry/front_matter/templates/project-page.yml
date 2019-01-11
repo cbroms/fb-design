@@ -36,3 +36,5 @@ fields:
 - type: tag_list
   label: Tags
   name: tags
+pages:
+- _projects/tiburon-house.md
