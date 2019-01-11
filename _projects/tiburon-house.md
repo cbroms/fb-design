@@ -14,4 +14,6 @@ This is a remodel of a house in tiburon .... this is the inside
 
 ![](/static/74Bayview 21_1000px.jpg)
 
-This is before![](/static/front deck before.JPG)
+This is before
+
+![](/static/front deck before.JPG)
