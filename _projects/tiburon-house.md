@@ -10,10 +10,8 @@ date: 2019-01-10 17:09:09 -0800
 layout: project-page
 
 ---
-This is a remodel of a house in tiburon .... this is the inside
-
 ![](/static/74Bayview 21_1000px.jpg)
 
-This is before
+This is before and after showing the front entry deck
 
-![](/static/front deck before.JPG)
+![](/static/front deck before.JPG)![](/static/unedited 03 (1)_2)_3)_4)_5)_6)_7).jpg)
