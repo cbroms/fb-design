@@ -14,4 +14,4 @@ layout: project-page
 
 This is before and after showing the front entry deck
 
-![](/static/front deck before.JPG)![](/static/unedited 03 (1)_2)_3)_4)_5)_6)_7).jpg)
+![](/static/front deck before.JPG)![](/static/74Bayview 03_1000px.jpg)
