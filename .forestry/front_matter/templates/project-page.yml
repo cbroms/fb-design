@@ -33,8 +33,16 @@ fields:
   label: Image Style
   name: image_style
   description: Style of project's landing page
+  default: vertical
 - type: tag_list
   label: Tags
   name: tags
+- type: text
+  name: layout
+  label: Layout
+  hidden: false
+  config:
+    required: false
+  description: project-page
 pages:
 - _projects/tiburon-house.md
