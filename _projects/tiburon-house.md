@@ -10,6 +10,8 @@ date: 2019-01-10 17:09:09 -0800
 layout: project-page
 
 ---
-This is a remodel![](/static/74Bayview 21_1000px.jpg)
+This is a remodel of a house in tiburon .... this is the inside
+
+![](/static/74Bayview 21_1000px.jpg)
 
 This is before![](/static/front deck before.JPG)
