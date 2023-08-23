@@ -15,7 +15,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "static/img",
       publicFolder: "./",
     },
   },
@@ -28,6 +28,13 @@ export default defineConfig({
         path: "_projects",
         match: {
           include: "**/*",
+        },
+        defaultItem: () => {
+          return {
+            title: "New project",
+            subtitle: "This is the project's subtitle",
+            layout: "project-page",
+          };
         },
         fields: [
           {
