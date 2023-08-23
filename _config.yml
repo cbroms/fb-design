@@ -25,6 +25,7 @@ exclude:
     "vendor/cache/",
     "vendor/gems/",
     "vendor/ruby/",
+    "admin.html",
   ]
 keep_files: [".git", ".svn"]
 encoding: "utf-8"
