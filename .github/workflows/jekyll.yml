@@ -40,6 +40,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: "npm"
+      - name: Install Dependencies
+        run: npm install
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: npm run tinacms build && bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
