@@ -6,4 +6,6 @@ image_style: vertical
 layout: project-page
 ---
 
-With views of Mount Tampalpais![](/static/img/Hale_44VIACHEPARRO_1.jpg)
+With views of Mount Tampalpais
+
+![](/static/img/Hale_44VIACHEPARRO_1.jpg)
