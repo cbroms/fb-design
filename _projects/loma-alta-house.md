@@ -1,20 +1,17 @@
 ---
-layout: project-page
 title: Loma Alta House
-subtitle: Remodel of an eichler home in San Anselmo, CA
+subtitle: 'Remodel of an eichler home in San Anselmo, CA'
 image: /static/img/loma_cover.jpg
-image_style: vertical
 show_on_landing: false
-tags: [Residential]
-
+image_style: vertical
+tags:
+  - Residential
+layout: project-page
 ---
 
-Something about the project 
+The remodel renovates the master suite, kitchen and living spaces. With Heath tile accents and teak and white oak cabinetry throughout.
 
 ![](/static/img/loma_dining.jpg)
 
 ![](/static/img/kitchen1.jpg)
 ![](/static/img/kitchen2.jpg)
-
-
-
